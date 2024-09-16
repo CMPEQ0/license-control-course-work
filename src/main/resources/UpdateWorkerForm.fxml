@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cmpeq0.controlsystem.ui.controller.UpdateWorkerController">
+   <children>
+      <Label fx:id="errorLabel" layoutX="38.0" layoutY="604.0" prefHeight="20.0" prefWidth="274.0" text="message">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="idLabel" layoutX="259.0" layoutY="37.0" prefHeight="17.0" prefWidth="99.0" text="id_number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="72.0" text="ФИО">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" layoutX="167.0" layoutY="69.0" prefHeight="25.0" prefWidth="321.0" promptText="Гусев Иван" />
+      <Label layoutX="24.0" layoutY="102.0" text="Отдел">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="departmentField" layoutX="167.0" layoutY="103.0" prefHeight="25.0" prefWidth="321.0" promptText="Проектирование" />
+      <Label layoutX="23.0" layoutY="134.0" text="Должность">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="positionField" layoutX="167.0" layoutY="135.0" prefHeight="25.0" prefWidth="321.0" promptText="Дизайнер" />
+      <TreeTableView fx:id="table" layoutX="38.0" layoutY="270.0" prefHeight="224.0" prefWidth="562.0">
+        <columns>
+          <TreeTableColumn prefWidth="75.0" text="Id" />
+          <TreeTableColumn prefWidth="348.0" text="Наименование" />
+            <TreeTableColumn prefWidth="138.0" text="Тип" />
+        </columns>
+      </TreeTableView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="38.0" layoutY="248.0" prefHeight="22.0" prefWidth="562.0" style="-fx-border-color: grey;" text="Доступные ресурсы">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="deleteButton" layoutX="425.0" layoutY="600.0" mnemonicParsing="false" text="Удалить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="secretField" layoutX="38.0" layoutY="515.0" prefHeight="25.0" prefWidth="369.0" promptText="id помещения" />
+      <Button fx:id="assignButton" layoutX="425.0" layoutY="513.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="184.0" text="Предоставить доступ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="23.0" layoutY="169.0" text="Логин">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginField" layoutX="167.0" layoutY="170.0" prefHeight="25.0" prefWidth="321.0" />
+      <Label layoutX="23.0" layoutY="206.0" text="Пароль">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="changeButton" layoutX="526.0" layoutY="201.0" mnemonicParsing="false" text="Изменить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveButton" layoutX="511.0" layoutY="599.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="99.0" text="Сохранить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="31.0" layoutY="47.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordField" layoutX="167.0" layoutY="204.0" prefHeight="25.0" prefWidth="321.0" />
+      <Button fx:id="revokeButton" layoutX="426.0" layoutY="553.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="184.0" text="Отозвать доступ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
